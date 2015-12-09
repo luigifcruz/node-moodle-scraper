@@ -25,6 +25,6 @@ moodle.courses(user, function(err, courses){
 
 ### API
 
-### couses(user, callback)
+#### courses(user, callback)
 * `url` User credencials and Moodle Domain.
 * `callback(err, couses)` Courses JSON or error.
