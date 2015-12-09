@@ -39,7 +39,7 @@ moodle.courses(user, function(err, courses){
 #### teacher(user, teacher, callback)
 * `user` User credentials and Moodle Domain.
 * `teacher` Moodle teacher ID.
-* `callback(err, courses)` Teacher information or error.
+* `callback(err, teacher)` Teacher information or error.
 
 ```javascript
 moodle.teacher(user, teacherId, function(err, teacher){
