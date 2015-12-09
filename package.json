@@ -1,6 +1,6 @@
 {
   "name": "moodle-scraper",
-  "version": "0.0.3.1",
+  "version": "0.0.3",
   "engine": "node 0.4.1",
   "description": "Moodle Scraper",
   "main": "index.js",
