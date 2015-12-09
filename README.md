@@ -1,6 +1,6 @@
 ### moodle-scraper
 
-Very simple Moodle Scraper, tested only with UTFPR-CP Moodle. More APIs very soon.
+Very simple Moodle Scraper, tested only with UTFPR-CP Moodle. More API very soon.
 
 ### Installation
 
@@ -26,5 +26,24 @@ moodle.courses(user, function(err, courses){
 ### API
 
 #### courses(user, callback)
-* `url` User credencials and Moodle Domain.
-* `callback(err, couses)` Courses JSON or error.
+* `user` User credentials and Moodle Domain.
+* `callback(err, courses)` Courses JSON or error.
+
+```javascript
+moodle.courses(user, function(err, courses){
+   if (err) throw err;
+   console.log(courses);
+})
+```
+
+#### teacher(user, teacher, callback)
+* `user` User credentials and Moodle Domain.
+* `teacher` Moodle teacher ID.
+* `callback(err, courses)` Teacher information or error.
+
+```javascript
+moodle.teacher(user, teacherId, function(err, teacher){
+   if (err) throw err;
+   console.log(teacher)
+})
+```
