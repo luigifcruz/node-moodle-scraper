@@ -74,7 +74,9 @@ function teacher(user, teacher, callback) {
           FirstAccess: first_access,
           LastAccess: last_access
         }
-        console.log(teacherInfo);
+        process.nextTick(function(){
+           callback(null, teacherInfo);
+        });
 
       } else {
         process.nextTick(function(){
