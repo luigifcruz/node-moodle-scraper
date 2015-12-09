@@ -8,7 +8,7 @@ request = request.defaults({jar: true});
 
 function courses(user, callback) {
   // Authenticate user.
-  request.post({url: user.url + "/moodle/login/index.php";, form: {username: user.username, password: user.password}}, function(err,httpResponse,body){
+  request.post({url: user.url + "/moodle/login/index.php", form: {username: user.username, password: user.password}}, function(err,httpResponse,body){
     if (err) throw err
 
     // Generate JSON with courses IDs and Names.
